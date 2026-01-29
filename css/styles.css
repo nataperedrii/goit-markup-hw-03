@@ -166,6 +166,10 @@ a {
     letter-spacing: 0.02em;
 }
 
+.title-advantages { 
+    display: none;
+}
+
 .advantages-container { 
     padding-top: 120px;
     padding-bottom: 120px;
