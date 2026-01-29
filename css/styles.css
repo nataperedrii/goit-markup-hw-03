@@ -110,9 +110,12 @@ a {
 
 .section-hero {
     background-color: #2E2F42;
+    height: 600px;
+    padding: 188px 0;
 }
 
 .text-hero {
+    width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -130,11 +133,20 @@ a {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
 .button-hero:hover,
 .button-hero:focus {
     background-color: #404BBF;
+}
+
+.text-hero-button {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
 }
 
 /* section-2 */
@@ -148,16 +160,39 @@ a {
 }
 
 .paragraph {
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.advantages-container {
+    padding: 120px 0;
+}
+
+.advantages-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.advantages-item {
+    width: 264px;
+}
+
+.advantages-title {
+    margin-bottom: 8px;
 }
 
 /* section-3 */
 
 .section-team {
     background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+.section-team-list {
+    padding: 0;
 }
 
 .section-title {
@@ -166,14 +201,21 @@ letter-spacing: 0.02em;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2e2f42;  
+    color: #2e2f42; 
+    padding-bottom: 72px; 
 }
 
 .team-list {
     background-color: #FFFFFF;
     }
 
-/* Footer */
+.section-team-container ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+    /* Footer */
 
 .page-footer {
     background-color: #2E2F42;
