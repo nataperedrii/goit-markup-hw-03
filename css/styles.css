@@ -115,7 +115,7 @@ a {
 }
 
 .text-hero {
-    width: 496px;
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -133,8 +133,11 @@ a {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
-    padding: 16px 32px;
     border-radius: 4px;
+    height: 56px;
+    min-width: 169px;
+    padding: 16px 32px;
+    border: none;
 }
 
 .button-hero:hover,
@@ -241,10 +244,48 @@ a {
     gap: 24px;
 }
 
-    /* Footer */
+/* section-4 */
+
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-title {
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-item {
+    width: calc((100% -48px) / 3);
+}
+
+.portfolio-title-paragraph {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.portfolio-title {
+    margin-bottom: 8px;
+}
+
+/* Footer */
 
 .page-footer {
     background-color: #2E2F42;
+    padding: 100px 0;
+}
+
+.header-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .header-logo .logo-footer {
@@ -255,4 +296,5 @@ a {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
